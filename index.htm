@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name='keywords' contetn='resum, personality'>
-    <meta name='description' content='my resum'>
     <title>My Resum</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<img src="avatar.jpg" width='200'>
-<h1>Акулов Вадим</h1>
+<div class="container">
+    <div class="info">
+        <img src="cat_ava.jpg" class="avatar" alt="Odin cat"/>
+        <div class="info-text">
+            <h1>О&#x301дин кот - border cat</h1>
+            <p>Мне 3 года. В моих жилах течет кавказская кровь.</p>
+            <p>Семейное положение: в данный момент и отныне навсегда холост(по уважительным причинам)</p>
 
-<p>Мне 31 год. Являюсь действующим военнослужащим.
-    <strong>Развиваю навыки программирования</strong></p>
-
-<p>Я люблю <em>заниматься спортом и программировать</em></p>
-
-<h2>Мои хобби:</h2>
-
-<ol>
-    <li>Стрельба</li>
-    <li>Программирование</li>
-    <li>Бег</li>
-    <li>Биллиард</li>
-    <li>Банджи-джампинг</li>
-</ol>
-
-<h2>Опыт работы:</h2>
-
-<table border="1" width="500">
-    <thead>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Кург ПП</td>
-        <td>Инженер</td>
-        <td>2013-2015</td>
-    </tr>
-    <tr>
-        <td>Кург Уп</td>
-        <td>Зам</td>
-        <td>2015-2017</td>
-    </tr>
-    <tr>
-        <td>Абх Уп</td>
-        <td>Зам</td>
-        <td>2017-2022</td>
-    </tr>
-    <tr>
-        <td>Кург Звер</td>
-        <td>Зам</td>
-        <td>2022 - н.в.</td>
-    </tr>
-    </tbody>
-</table>
-
-<h4>Связаться со мной:</h4>
-
-<form>
-    <div>
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Enter name">
+            <h4>Список соц сетей:</h4>
+            <a href="https://instagram.com/odin__kot?igshid=YmMyMTA2M2Y=" target="_blank">Мой Instagram</a> |
+            <a href="https://vk.com/bo.expert" target="_blank">Вконтакте хозяина</a> |
+            <a href="https://t.me/Aldo_Apache_Raine" target="_blank">Telegram хозяина</a>
+        </div>
     </div>
 
-    <div>
-        <label for="email">Ваш email</label>
-        <input type="email" id="email" placeholder="Enter email">
+    <div class="card bg-green">
+        <h2>Мои хобби:</h2>
+
+        <ol class="list">
+            <li>Сон в любом месте и положении</li>
+            <li>Прыжки вверх и разгон с 0 до 100 за 2 сек.</li>
+            <li>Игра с мышкой</li>
+            <li>Делатю массаж и муррротерапию</li>
+            <li>Кусаю за ногу</li>
+        </ol>
     </div>
 
-    <div>
-        <label for="message">Сообщение</label>
-        <br>
-        <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+    <div class="card bg-red">
+        <h2 class="hob">Опыт работы:</h2>
+        <table class="table">
+            <tr>
+                <td>ООО "Шерстяной мир"</td>
+                <td>Генератор-шерсти</td>
+                <td>Ежегодно</td>
+            </tr>
+            <tr>
+                <td>ООО "Быстрые ноги"</td>
+                <td>Главный грызун</td>
+                <td>2020 - н.в.</td>
+            </tr>
+            <tr>
+                <td>ООО "Веселые кроты"</td>
+                <td>Помошник землероя</td>
+                <td>2019 - н.в.</td>
+            </tr>
+            <tr>
+                <td>ООО "Привет пернатый"</td>
+                <td>Старший орнитолог</td>
+                <td>2021 - н.в.</td>
+            </tr>
+        </table>
     </div>
 
-    <button type="submit">Send message</button>
-</form>
-
-<h4>Список соц сетей:</h4>
-
-<a href="https://vk.com/bo.expert" target="_blank">Вконтакте</a>
-|
-<a href="https://t.me/Aldo_Apache_Raine" target="_blank">Telegram</a>
+    <div class="card bg-yellow">
 
 
+        <form class="form">
+            <h2>Связаться со мной:</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" placeholder="Enter email">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send message</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
